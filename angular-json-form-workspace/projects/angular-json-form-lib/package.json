@@ -1,6 +1,6 @@
 {
-  "name": "angular-json-form-lib",
-  "version": "0.0.1",
+  "name": "angular18-json-form",
+  "version": "0.0.2",
   "peerDependencies": {
     "@angular/common": "^18.1.0",
     "@angular/core": "^18.1.0"
@@ -8,5 +8,17 @@
   "dependencies": {
     "tslib": "^2.3.0"
   },
-  "sideEffects": false
+  "sideEffects": false,
+  "author": {
+    "name": "Abhishek Vishwakarma",
+    "email": "abhishek@pmaxtek.com"
+  },
+  "keywords": [
+    "angular",
+    "json",
+    "form",
+    "angular-json-form",
+    "angular-json",
+    "json-form"
+  ]
 }

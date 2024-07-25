@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { AngularJsonFormLibComponent } from '../../../angular-json-form-lib/src/public-api';
+import { AngularJsonForm } from '../../../angular-json-form-lib/src/public-api';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, AngularJsonFormLibComponent],
+  imports: [RouterOutlet, AngularJsonForm],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
@@ -199,6 +199,9 @@ export class AppComponent {
         ]
       }
     ]
+  };
+  
+  onSubmit(ev:any){
+    console.log(ev, 'onSubmit');
   }
-;  
 }

@@ -1,13 +1,13 @@
 import { CommonModule } from '@angular/common';
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 
 @Component({
-  selector: 'lib-angular-json-form-lib',
+  selector: 'angular-json-form',
   standalone: true,
   imports: [CommonModule, ReactiveFormsModule],
   template: `
-    <form [formGroup]="form" (ngSubmit)="onSubmit()" [ngClass]="json?.formConfig?.class" [ngStyle]="json?.formConfig?.style">
+    <form [formGroup]="form" (ngSubmit)="onFormSubmit()" [ngClass]="json?.formConfig?.class" [ngStyle]="json?.formConfig?.style">
       
       <!-- Label and Field Rendering -->
       <div *ngFor="let field of fields">
@@ -114,8 +114,9 @@ import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angula
   `,
   styles: ``
 })
-export class AngularJsonFormLibComponent implements OnInit {
+export class AngularJsonForm implements OnInit {
   @Input() json: any;
+  @Output() onSubmit:EventEmitter<any> = new EventEmitter<any>();
   form!: FormGroup;
   fields: any[] = [];
   
@@ -268,7 +269,7 @@ export class AngularJsonFormLibComponent implements OnInit {
   }
   
 
-  onSubmit(): void {
-    console.log(this.form.value);
+  onFormSubmit(): void {
+    this.onSubmit.emit(this.form.value)
   }
 }
