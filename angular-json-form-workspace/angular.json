@@ -33,6 +33,36 @@
               "zone.js/testing"
             ]
           }
+        },
+        "storybook": {
+          "builder": "@storybook/angular:start-storybook",
+          "options": {
+            "configDir": "projects/angular-json-form-lib/.storybook",
+            "browserTarget": "angular-json-form-lib:build",
+            "compodoc": true,
+            "compodocArgs": [
+              "-e",
+              "json",
+              "-d",
+              "projects/angular-json-form-lib"
+            ],
+            "port": 6006
+          }
+        },
+        "build-storybook": {
+          "builder": "@storybook/angular:build-storybook",
+          "options": {
+            "configDir": "projects/angular-json-form-lib/.storybook",
+            "browserTarget": "angular-json-form-lib:build",
+            "compodoc": true,
+            "compodocArgs": [
+              "-e",
+              "json",
+              "-d",
+              "projects/angular-json-form-lib"
+            ],
+            "outputDir": "dist/storybook/angular-json-form-lib"
+          }
         }
       }
     },
