@@ -1,7 +1,7 @@
 Angular JSON Form Library
 =========================
 
-The Angular JSON Form Library (angular-json-form) provides a dynamic and flexible way to create forms based on JSON configuration. It supports various input types, validations, custom styling, and error handling.
+The Angular JSON Form Library (angular18-json-form) provides a dynamic and flexible way to create forms based on JSON configuration. It supports various input types, validations, custom styling, and error handling.
 
 Features
 --------
@@ -36,12 +36,12 @@ Usage
 Import the JsonFormModule into your Angular module:
 
 ```javascript
-import { JsonFormModule } from 'angular-json-form';
+import { AngularJsonForm } from 'angular18-json-form'
 
 @NgModule({
   imports: [
     // other imports
-    JsonFormModule
+    AngularJsonForm
   ],
   // other module settings
 })
@@ -120,7 +120,7 @@ const formConfig = {
 In your component template:
 
 ```html
-<json-form [config]="formConfig"></json-form>
+<angular-json-form [json]="formConfig" (onSubmit)="onSubmit($event)"></angular-json-form>
 ```
 
 In your component class:
@@ -268,7 +268,7 @@ const formConfig = {
 In your component template:
 
 ```html
-<json-form [config]="formConfig"></json-form>
+<angular-json-form [json]="formConfig" (onSubmit)="onSubmit($event)"></angular-json-form>
 ```
 
 In your component class:
