@@ -23,7 +23,7 @@ Features
 Storybook
 ---------
 To view the component in action, goto:
-[Angular JSON Form](https://angular-json-form.vercel.app/?path=/story/stories-json-form-component--first-story)
+[Angular JSON Form](https://angular-json-form.vercel.app)
 
 Installation
 ------------
