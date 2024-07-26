@@ -2,6 +2,7 @@ Angular JSON Form Library
 =========================
 
 The Angular JSON Form Library (angular18-json-form) provides a dynamic and flexible way to create forms based on JSON configuration. It supports various input types, validations, custom styling, and error handling.
+![image](https://github.com/user-attachments/assets/56537629-7d86-472c-8b88-eebbaba62625)
 
 Features
 --------
