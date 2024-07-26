@@ -19,6 +19,11 @@ Features
 *   **Customizable Labels**: Set custom labels with styling options.
     
 
+Storybook
+---------
+To view the component in action, goto:
+[Angular JSON Form](https://angular-json-form.vercel.app/?path=/story/stories-json-form-component--first-story)
+
 Installation
 ------------
 
