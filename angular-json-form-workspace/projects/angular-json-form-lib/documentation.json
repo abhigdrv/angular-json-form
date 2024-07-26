@@ -11,7 +11,7 @@
     "miscellaneous": {
         "variables": [
             {
-                "name": "FirstStory",
+                "name": "JSONForm",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
                 "file": "projects/angular-json-form-lib/src/stories/json-form.component.stories.ts",
@@ -59,7 +59,7 @@
         "groupedVariables": {
             "projects/angular-json-form-lib/src/stories/json-form.component.stories.ts": [
                 {
-                    "name": "FirstStory",
+                    "name": "JSONForm",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
                     "file": "projects/angular-json-form-lib/src/stories/json-form.component.stories.ts",
@@ -130,7 +130,7 @@
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
-                "name": "FirstStory",
+                "name": "JSONForm",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
                 "status": "low"

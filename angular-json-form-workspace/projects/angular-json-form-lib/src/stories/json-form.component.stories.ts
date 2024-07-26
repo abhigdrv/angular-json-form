@@ -1,5 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/angular';
 import { JsonFormComponent } from './json-form.component';
+import formConfig from './formConfig';
 
 //👇 This default export determines where your story goes in the story list
 const meta: Meta<JsonFormComponent> = {
@@ -9,8 +10,8 @@ const meta: Meta<JsonFormComponent> = {
 export default meta;
 type Story = StoryObj<JsonFormComponent>;
 
-export const FirstStory: Story = {
+export const JSONForm: Story = {
   args: {
-    //👇 The args you need here will depend on your component
+    json:formConfig
   },
 };
