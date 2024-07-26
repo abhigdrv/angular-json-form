@@ -520,7 +520,7 @@ export class JsonFormComponent implements OnInit {
 
   onJsonChange(event: any) {
     try {
-      const newJson = event.target.value;
+      const newJson = JSON.parse(event.target.value);
       this.updateForm(newJson);
     } catch (error) {
       console.error('Invalid JSON:', error);
