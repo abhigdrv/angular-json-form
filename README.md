@@ -2,7 +2,8 @@ Angular JSON Form Library
 =========================
 
 The Angular JSON Form Library (angular18-json-form) provides a dynamic and flexible way to create forms based on JSON configuration. It supports various input types, validations, custom styling, and error handling.
-![image](https://github.com/user-attachments/assets/56537629-7d86-472c-8b88-eebbaba62625)
+![image](https://github.com/user-attachments/assets/e001f5b8-8c4d-48cc-a182-ce82a8cc5495)
+
 
 Features
 --------
@@ -23,7 +24,7 @@ Features
 Storybook
 ---------
 To view the component in action, goto:
-[Angular JSON Form](https://angular-json-form.vercel.app/?path=/story/stories-json-form-component--first-story)
+[Angular JSON Form](https://angular-json-form.vercel.app)
 
 Installation
 ------------
