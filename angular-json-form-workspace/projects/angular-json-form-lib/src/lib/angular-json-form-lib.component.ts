@@ -19,37 +19,20 @@ import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angula
           {{field.label}}
         </label>
         
-        <!-- Text Input -->
-        <input *ngIf="field.type === 'text'"
+        <!-- Text/Email/Password/Number/Date Input -->
+        <input *ngIf="field.type === 'text' || field.type === 'email' || field.type === 'password' || field.type === 'number' || field.type === 'date' || field.type === 'tel' || field.type === 'url' || field.type == 'search' || field.type === 'datetime-local' || field.type === 'month' || field.type === 'week' || field.type === 'time' || field.type === 'hidden' || field.type === 'color'"
                [formControlName]="field.name"
                [type]="field.type"
                [id]="field.name"
                [ngClass]="field.class"
                [ngStyle]="field.style"/>
         
-        <!-- Number Input -->
-        <input *ngIf="field.type === 'number'"
+        <!-- Text/Email/Password/Number/Date Input -->
+        <textarea *ngIf="field.type === 'textarea'"
                [formControlName]="field.name"
-               [type]="field.type"
                [id]="field.name"
                [ngClass]="field.class"
-               [ngStyle]="field.style"/>
-        
-        <!-- Email Input -->
-        <input *ngIf="field.type === 'email'"
-               [formControlName]="field.name"
-               [type]="field.type"
-               [id]="field.name"
-               [ngClass]="field.class"
-               [ngStyle]="field.style"/>
-        
-        <!-- Password Input -->
-        <input *ngIf="field.type === 'password'"
-               [formControlName]="field.name"
-               [type]="field.type"
-               [id]="field.name"
-               [ngClass]="field.class"
-               [ngStyle]="field.style"/>
+               [ngStyle]="field.style"></textarea>
         
         <!-- Checkbox Input -->
         <input *ngIf="field.type === 'checkbox'"

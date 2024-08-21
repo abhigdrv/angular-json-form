@@ -103,6 +103,40 @@ const formConfig = {
         ],
       },
       {
+        name: 'textarea',
+        type: 'textarea',
+        label: 'Text Area',
+        class: '',
+        style: {
+          width: '100%',
+          padding: '10px',
+          'margin-bottom': '10px',
+          border: '1px solid #ccc',
+          'border-radius': '5px',
+          'font-size': '14px',
+        },
+        labelClass: '',
+        labelStyle: {
+          color: '#333',
+          'font-size': '14px',
+          'margin-bottom': '5px',
+          display: 'block',
+        },
+        errorClass: '',
+        errorStyle: {
+          color: 'red',
+          'font-size': '12px',
+        },
+        validations: [
+          {
+            name: 'required',
+          },
+          {
+            name: 'email',
+          },
+        ],
+      },
+      {
         name: 'age',
         type: 'number',
         label: 'Age',
